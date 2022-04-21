@@ -41,6 +41,9 @@ http://192.168.1.190/react-test/#/login
 ### 路由
 自定义封装了LoadableComponent方法，在进入页面或刷新是采用进度条代替。
 
+### 请求
+注意在 src/service/host 中配置 本地/测试/生产 环境请求，接口统一封装在src/service/api中。
+
 ### 项目发布
 在publish.sh中配置发布ip和地址，bash publish.sh XXX。例如发布测试环境：bash publish.sh test
 

@@ -13,11 +13,11 @@ const confs = {
     type2: 'https://prd2.com.cn/'
   }
 };
-console.log(process.env.NODE_ENV)
+console.log(process.env.REACT_APP_ENV)
 let env: string = 'dev';
-if (process.env.NODE_ENV === 'production') {
+if (process.env.REACT_APP_ENV === 'production') {
   env = 'prd'
-} else if (process.env.NODE_ENV === 'test') {
+} else if (process.env.REACT_APP_ENV === 'test') {
   env = 'test'
 }
 

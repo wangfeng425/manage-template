@@ -13,7 +13,6 @@ export const deleteTodo = (res: number) => ({
 })
 
 export const getProduct = () => {
-  console.log(GET_PRODUCT)
   var classifyaction = (value: any) => ({
     type: GET_PRODUCT,
     data: value
