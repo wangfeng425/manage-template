@@ -1,0 +1,20 @@
+.trigger{
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+}
+.trigger:hover{
+  color: #1890ff;
+}
+
+.dropdown-style {
+  top: 60px !important;
+}
+
+.ant-dropdown-menu {
+  padding: 0 !important;
+}
+
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title {
+  padding: 10px 20px !important;
+}

@@ -1,0 +1,156 @@
+/* margin padding width height border border-radius */
+
+/** margin和padding上下左右 5-80px 间隔为5px */
+@mixin mlGenerator($value) {
+  .ml#{$value} {
+    margin-left: $value * 1px !important;
+  }
+}
+
+@mixin mtGenerator($value) {
+  .mt#{$value} {
+    margin-top: $value * 1px !important;
+  }
+}
+
+@mixin mbGenerator($value) {
+  .mb#{$value} {
+    margin-bottom: $value * 1px !important;
+  }
+}
+
+@mixin mrGenerator($value) {
+  .mr#{$value} {
+    margin-right: $value * 1px !important;
+  }
+}
+
+@mixin mGenerator($value) {
+  .m#{$value} {
+    margin: $value * 1px !important;
+  }
+}
+
+@mixin plGenerator($value) {
+  .pl#{$value} {
+    padding-left: $value * 1px !important;
+  }
+}
+
+@mixin ptGenerator($value) {
+  .pt#{$value} {
+    padding-top: $value * 1px !important;
+  }
+}
+
+@mixin pbGenerator($value) {
+  .pb#{$value} {
+    padding-bottom: $value * 1px !important;
+  }
+}
+
+@mixin prGenerator($value) {
+  .pr#{$value} {
+    padding-right: $value * 1px !important;
+  }
+}
+
+@mixin pGenerator($value) {
+  .p#{$value} {
+    padding: $value * 1px !important;
+  }
+}
+
+@mixin lhGenerator($value) {
+  .hl#{$value} {
+    line-height: $value * 1px !important;
+  }
+}
+
+// 5-80px 间隔5px
+$i: 80;
+
+@while $i >= 0 {
+  @include mlGenerator($i);
+  @include mtGenerator($i);
+  @include mbGenerator($i);
+  @include mrGenerator($i);
+  @include mGenerator($i);
+  @include plGenerator($i);
+  @include ptGenerator($i);
+  @include pbGenerator($i);
+  @include prGenerator($i);
+  @include pGenerator($i);
+  @include lhGenerator($i);
+  $i: $i - 1;
+}
+
+/** margin padding值 结束 ~~~~~end~~~~~ */
+
+/* width px值 */
+@mixin wGenerator($value) {
+  .w#{$value} {
+    width: $value * 1px !important;
+  }
+}
+//200px宽度 -> 示例：@include wGenerator(200);
+@include wGenerator(100);//100px
+@include wGenerator(180); //180px
+@include wGenerator(160); //180px
+@include wGenerator(62); //62px
+
+/* width px值 结束 ————————end———————————— */
+
+/* width % 百分比 值 */
+@mixin wpGenerator($value) {
+  .wp#{$value} {
+    width: $value * 1% !important;
+  }
+}
+// 5%-100%,间隔5%的所有值 注意：只能传整数
+$i: 100;
+
+@while $i > 0 {
+  @include wpGenerator($i);
+  $i: $i - 1;
+}
+
+// .wp33 {
+//   width: 33.3% !important;
+// }
+
+// 单个值 写这
+@include wpGenerator(100);
+
+/* width 百分比 值 结束 ————————end———————————— */
+
+//其他
+//height
+.hp100 {
+  height: 100%;
+}
+
+.h400 {
+  height: 400px;
+}
+
+.h60 {
+  height: 60px;
+}
+
+.h100 {
+  height: 100px !important;
+}
+
+.h200 {
+  height: 200px !important;
+}
+
+.h250 {
+  height: 250px !important;
+}
+
+.h300 {
+  height: 300px !important;
+}
+

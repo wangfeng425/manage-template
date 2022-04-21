@@ -1,0 +1,83 @@
+/* 与布局、排版有关的全局样式名 */
+.flex {
+  display: flex;
+}
+//横向 换行
+.row-wrap {
+  flex-flow: row wrap;
+}
+
+.flex-wp {
+  flex-wrap: wrap;
+}
+
+/* 垂直居中 */
+.flex-vc,
+.flex-a-center {
+  align-items: center;
+}
+
+.flex-a-start {
+  align-items: flex-start;
+}
+
+.flex-a-end {
+  align-items: flex-end;
+}
+
+.flex-a-s-start {
+  align-self: flex-start;
+}
+
+.flex-a-s-end {
+  align-self: flex-end;
+}
+
+.flex-a-baseline {
+  align-items: baseline;
+}
+
+.flex-a-stretch {
+  align-items: stretch;
+}
+
+.flex-hc,
+.flex-j-center {
+  justify-content: center;
+}
+
+.flex-hj {
+  justify-content: space-between;
+}
+
+.flex-ha {
+  justify-content: space-around;
+}
+
+.flex-j-start {
+  justify-content: flex-start;
+}
+
+.flex-j-end {
+  justify-content: flex-end;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.vat {
+  vertical-align: top;
+}
+
+.vab {
+  vertical-align: bottom;
+}
+
+.vatp {
+  vertical-align: text-top;
+}
+
+.vatb {
+  vertical-align: text-bottom;
+}

@@ -1,0 +1,29 @@
+@mixin colorGenerator($name, $value) {
+  .color-#{$name} {
+    color: $value !important;
+  }
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+}
+
+@include colorGenerator(theme, $--color-primary);
+@include colorGenerator(success, $--color-success);
+@include colorGenerator(warning, $--color-warning);
+@include colorGenerator(danger, $--color-danger);
+@include colorGenerator('white', $white);
+@include colorGenerator('black', $--color-black);
+@include colorGenerator('gray', $gray);
+@include colorGenerator(gray2, $gray2);
+@include colorGenerator(gray8, $gray8);
+@include colorGenerator(regular, $--color-text-regular);
+@include colorGenerator(3, #333);
+@include colorGenerator(6, #666);
+@include colorGenerator(9, #999);
+@include colorGenerator(c, #ccc);
+@include colorGenerator('red', $red);
+@include colorGenerator('orange', $orange);
+@include colorGenerator('yellow', $yellow);
+
+
+

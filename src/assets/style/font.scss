@@ -1,0 +1,22 @@
+/* font-size 字体大小 12-50px */
+@mixin fsGenerator($value) {
+  .fs#{$value} {
+    font-size: $value * 1px !important;
+  }
+}
+$i: 50;
+
+@while $i > 11 {
+  @include fsGenerator($i);
+  $i: $i - 1;
+}
+
+.fs0 {
+  font-size: 0;
+}
+
+/* 其他数值调用方法，如: @include fsGenerator(50); */
+
+.fw-bold, .bold {
+  font-weight: bold;
+}

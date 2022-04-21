@@ -1,0 +1,75 @@
+{
+  "name": "react-study",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.23",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "antd": "^4.19.0",
+    "gsap": "^3.9.1",
+    "nprogress": "^0.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^7.2.6",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "typescript": "^4.5.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "set PORT=8080 && dotenv -e .env.dev react-app-rewired start",
+    "build": "react-app-rewired build",
+    "build:prod": "dotenv -e .env.prd react-app-rewired build",
+    "build:test": "dotenv -e .env.test react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage":"./",
+  "devDependencies": {
+    "@types/react-loadable": "^5.5.6",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "axios": "^0.26.1",
+    "bodymovin": "^4.13.0",
+    "customize-cra": "^1.0.0",
+    "dotenv-cli": "^5.1.0",
+    "draftjs-to-html": "^0.9.1",
+    "draftjs-to-markdown": "^0.6.0",
+    "echarts": "^5.3.2",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
+    "node-sass": "^7.0.1",
+    "react-app-rewired": "^2.1.11",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-router-dom": "^6.2.1"
+  }
+}

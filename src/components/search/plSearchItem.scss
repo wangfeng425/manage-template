@@ -1,0 +1,40 @@
+.pl-search-item-component {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  width: 33.3%;
+  vertical-align: middle;
+}
+
+.item-label {
+  display: inline-block;
+  font-size: 12px;
+  box-sizing: border-box;
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.item-content {
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+@media (min-width:960px) and (max-width: 1360px) {
+  .pl-search-item-component {
+    width: 33.3%;
+  }
+}
+
+@media (min-width:1360px) and (max-width: 1760px) {
+  .pl-search-item-component {
+    width: 25%;
+  }
+}
+
+@media (min-width:1760px) {
+  .pl-search-item-component {
+    width: 20%;
+  }
+}
